@@ -1,3 +1,6 @@
+
+AOS.init();
+
 // Selección del botón "Ir Arriba"
 const btnUp = document.getElementById("btn-up");
 
