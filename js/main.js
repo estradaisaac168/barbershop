@@ -1,5 +1,10 @@
 
-AOS.init();
+AOS.init({
+    duration: 800,
+    offset: 50,
+    easing: 'ease-in-out',
+    once: true,
+});
 
 // Selección del botón "Ir Arriba"
 const btnUp = document.getElementById("btn-up");
