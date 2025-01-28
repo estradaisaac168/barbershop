@@ -18,7 +18,7 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.
 $navbar-toggler-font-size: 1.8rem;
 
 
-@import "../bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 
@@ -304,59 +304,119 @@ h4,
 // End Contact
 
 
-.btn-floating {
+// .btn-floating {
+//     position: fixed;
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//     text-decoration: none;
+//     transition: all 0.3s ease;
+// }
+
+
+// /* Estilos base para botones flotantes */
+// #btn-whatsup {
+
+//     bottom: 20px;
+//     right: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 24px;
+//     z-index: 1000;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+//     background-color: #25D366;
+//     color: white;
+
+//     &:hover {
+//         background-color: #1ebf5d;
+//         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+//     }
+// }
+
+
+// /* Estilo específico del botón 'Ir Arriba' */
+// #btn-up {
+//     display: none;
+//     bottom: 100px;
+//     right: 20px;
+//     z-index: 99;
+//     background-color: transparent;
+//     text-align: center;
+//     line-height: 65px;
+//     border: none;
+//     cursor: pointer;
+//     font-size: 50px;
+//     color: $secondary;
+
+//     &:hover {
+//         color: lighten($secondary, 10%);
+
+//     }
+
+// }
+
+
+.back-to-top {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-
-/* Estilos base para botones flotantes */
-#btn-whatsup {
-
-    bottom: 20px;
-    right: 20px;
+    bottom: 110px; // Distancia desde la parte inferior
+    right: 25px; // Distancia desde la parte derecha
+    width: 50px;
+    height: 50px;
+    background-color: $secondary; // Color elegante (puedes ajustarlo)
+    color: #fff; // Color del ícono
+    border: none;
+    border-radius: 50%; // Forma redonda
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-    background-color: #25D366;
-    color: white;
-
-    &:hover {
-        background-color: #1ebf5d;
-        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-    }
-}
-
-
-/* Estilo específico del botón 'Ir Arriba' */
-#btn-up {
-    display: none;
-    bottom: 100px;
-    right: 20px;
-    z-index: 99;
-    background-color: transparent;
-    text-align: center;
-    line-height: 65px;
-    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-size: 50px;
-    color: $secondary;
-
-    &:hover {
-        color: lighten($secondary, 10%);
-
-    }
-
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    opacity: 0; // Oculto inicialmente
+    visibility: hidden; // No es interactivo inicialmente
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 1000; // Asegura que esté por encima de otros elementos
 }
 
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); // Aparece suavemente
+}
+
+.back-to-top:hover {
+    background-color: darken($color: $primary, $amount: 10%); // Color más oscuro al pasar el mouse
+}
+
+
+
+// Button WathSap
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px; // Distancia desde la parte inferior
+    right: 20px; // Distancia desde la parte izquierda
+    background-color: #25D366; // Color verde de WhatsApp
+    color: #fff; // Icono blanco
+    width: 60px; // Tamaño del botón
+    height: 60px; // Tamaño del botón
+    border-radius: 50%; // Forma redonda
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; // Tamaño del icono
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000; // Asegura que esté por encima de otros elementos
+    // transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    //transform: scale(1.1); // Efecto de zoom al pasar el mouse
+    background-color: #20c157; // Color más oscuro al pasar el mouse
+}
 
 
 .social-link {
