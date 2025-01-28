@@ -34,7 +34,7 @@ body {
     overflow: hidden;
 }
 
-.py-7{
+.py-7 {
     padding: 64px 0;
 }
 
@@ -100,17 +100,17 @@ h4,
         color: #ffd700;
         /* Amarillo mostaza */
     }
-    
+
     .navbar-brand:hover {
         color: #a0522d;
         /* Marrón cuero */
     }
-    
+
     .navbar-toggler {
         box-shadow: none !important;
         border: none;
     }
-    
+
     .nav-link {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -120,7 +120,7 @@ h4,
         /* Blanco */
         transition: color 0.3s ease;
     }
-    
+
     .nav-link:hover {
         color: #ffd700;
         /* Amarillo mostaza en hover */
@@ -153,9 +153,25 @@ h4,
 
 .hours {
 
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(./../img/hours.jpg);
+    // opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .hour-image {
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
     // .hour-image{
     //     height: 50px;
-    //     background-image: url(./../img/background.png);
+    //     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(./../img/hours.jpg);
     //     opacity: 0.1;
     //     background-repeat: no-repeat;
     //     background-position: center;
