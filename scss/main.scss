@@ -34,6 +34,9 @@ body {
     overflow: hidden;
 }
 
+.py-7{
+    padding: 64px 0;
+}
 
 img {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -88,38 +91,43 @@ h4,
 .navbar {
     background-color: #2f4f4f;
     /* Verde pino */
+
+
+    .navbar-brand {
+        font-family: 'Playfair Display', serif;
+        /* Fuente clásica */
+        font-weight: 700;
+        color: #ffd700;
+        /* Amarillo mostaza */
+    }
+    
+    .navbar-brand:hover {
+        color: #a0522d;
+        /* Marrón cuero */
+    }
+    
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: none;
+    }
+    
+    .nav-link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 1.2em;
+        padding: 12px 0;
+        /* Blanco */
+        transition: color 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        color: #ffd700;
+        /* Amarillo mostaza en hover */
+    }
 }
 
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    /* Fuente clásica */
-    font-weight: 700;
-    color: #ffd700;
-    /* Amarillo mostaza */
-}
 
-.navbar-brand:hover {
-    color: #a0522d;
-    /* Marrón cuero */
-}
-
-.navbar-toggler {
-    box-shadow: none !important;
-    border: none;
-}
-
-.nav-link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    /* Blanco */
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #ffd700;
-    /* Amarillo mostaza en hover */
-}
 
 
 // End Navbar
@@ -144,6 +152,15 @@ h4,
 
 
 .hours {
+
+    // .hour-image{
+    //     height: 50px;
+    //     background-image: url(./../img/background.png);
+    //     opacity: 0.1;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: contain;
+    // }
 
     img {
         box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -388,7 +405,7 @@ h4,
 }
 
 .back-to-top:hover {
-    background-color: darken($color: $primary, $amount: 10%); // Color más oscuro al pasar el mouse
+    background-color: darken($color: $secondary, $amount: 10%); // Color más oscuro al pasar el mouse
 }
 
 

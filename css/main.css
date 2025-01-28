@@ -11387,6 +11387,10 @@ body {
   overflow: hidden;
 }
 
+.py-7 {
+  padding: 64px 0;
+}
+
 img {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
@@ -11431,34 +11435,31 @@ h4, .h4,
   background-color: #2f4f4f;
   /* Verde pino */
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   font-family: "Playfair Display", serif;
   /* Fuente clásica */
   font-weight: 700;
   color: #ffd700;
   /* Amarillo mostaza */
 }
-
-.navbar-brand:hover {
+.navbar .navbar-brand:hover {
   color: #a0522d;
   /* Marrón cuero */
 }
-
-.navbar-toggler {
+.navbar .navbar-toggler {
   box-shadow: none !important;
   border: none;
 }
-
-.nav-link {
+.navbar .nav-link {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
+  font-size: 1.2em;
+  padding: 12px 0;
   /* Blanco */
   transition: color 0.3s ease;
 }
-
-.nav-link:hover {
+.navbar .nav-link:hover {
   color: #ffd700;
   /* Amarillo mostaza en hover */
 }
@@ -11590,7 +11591,7 @@ h4, .h4,
 }
 
 .back-to-top:hover {
-  background-color: rgb(27.9761904762, 47.0238095238, 47.0238095238);
+  background-color: rgb(120.1951219512, 61.6, 33.8048780488);
 }
 
 .whatsapp-button {
